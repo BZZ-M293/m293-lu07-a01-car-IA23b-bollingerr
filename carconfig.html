@@ -1,14 +1,50 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-  <meta charset="UTF-8">
-  <title>Fahrzeug-Konfigurator</title>
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fahrzeugauswahl</title>
 </head>
 <body>
+    <form action="https://it.bzz.ch/demo/formdata/index.php" method="post">
+        <fieldset>
+            <legend>Fahrzeugmodell auswählen</legend>
+            <select name="fahrzeugmodell">
+                <option>Audi A4</option>
+                <option>BMW 3 Series</option>
+                <option>Mercedes-Benz C-Class</option>
+                <option>Volkswagen Golf</option>
+                <option>Ford Focus</option>
+                <option>Chevrolet Cruze</option>
+                <option>Honda Civic</option>
+                <option>Toyota Corolla</option>
+                <option>Nissan Altima</option>
+                <option>Hyundai Elantra</option>
+                <option>Kia Optima</option>
+                <option>Mazda 3</option>
+                <option>Subaru Impreza</option>
+                <option>Tesla Model 3</option>
+                <option>Volvo S60</option>
+            </select>
+        </fieldset>
 
-<h1>Fahrzeug-Konfigurator</h1>
+        <fieldset>
+            <legend>Lackfarbe auswählen</legend>
+            <label>
+                <input type="radio" name="lackfarbe" value="Rot"> Rot
+            </label>
+            <label>
+                <input type="radio" name="lackfarbe" value="Blau"> Blau
+            </label>
+            <label>
+                <input type="radio" name="lackfarbe" value="Grün"> Grün
+            </label>
+            <label>
+                <input type="radio" name="lackfarbe" value="Schwarz"> Schwarz
+            </label>
+        </fieldset>
 
-
+        <button type="submit">Absenden</button>
+    </form>
 </body>
 </html>
